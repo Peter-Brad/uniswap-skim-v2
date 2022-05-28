@@ -77,6 +77,30 @@ const getName = async (add) => {
   }
 };
 
+const getSymbol = async (add) => {
+  try {
+    let token = new web3.eth.Contract(erc20abi, add);
+    let symbol = await token.methods.symbol().call();
+
+    return symbol;
+  } catch (e) {
+    console.log(`error on getSymbol: ${e}`);
+    return '';
+  }
+};
+
+const getReserves = async (pairAdd) => {
+  try {
+    let pair = new web3.eth.Contract(pairAbi, pairAdd);
+    let reserves = await pair.methods.getReserves().call();
+
+    return reserves;
+  } catch (e) {
+    console.log(`error on getReserves: ${e}`);
+    return '';
+  }
+};
+
 const getTokenNames = async (num, pair, tkn0, tkn1) => {
   try {
     let obj = {
@@ -85,12 +109,21 @@ const getTokenNames = async (num, pair, tkn0, tkn1) => {
       token0: {
         id: tkn0,
         name: await getName(tkn0),
+        symbol: await getSymbol(tkn0),
       },
       token1: {
         id: tkn1,
         name: await getName(tkn1),
+        symbol: await getSymbol(tkn1),
       },
     };
+    let reserves = await getReserves(pair); 
+    //console.log(reserves);
+    //增加pairName
+    obj.pairName = obj.token0.symbol + "/" + obj.token1.symbol;
+    //增加reserve
+    obj.token0.reserve = reserves._reserve0;
+    obj.token1.reserve = reserves._reserve1;
 
     let padding = ' '.repeat(2);
 
@@ -241,7 +274,7 @@ const handleInput = async () => {
         initial = factoryPair.count;
         pairPath = path.resolve(
           '../uniswap-skim-v2/data/pairs/',
-          `{factoryPair.network}`,
+          `${factoryPair.network}`,
           `${factoryPair.name}.js`
         );
 

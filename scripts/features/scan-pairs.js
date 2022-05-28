@@ -11,6 +11,7 @@ const bridged = require('../../data/tokens/mapped-polygon.js');
 const erc20abi = require('../../constants/abi/erc-20-abi.js');
 const pairAbi = require('../../constants/abi/pair-abi.js');
 const messages = require('../../constants/messages/cli.js');
+const baseToken = require('../../data/tokens/baseToken.js');
 
 let data;
 let web3;
