@@ -6,6 +6,9 @@ const fs = require('fs');
 const env = require('dotenv').config();
 const path = require('path');
 
+const pairCounts = require('../../data/factories/pair-counts.js');
+const baseToken = require('../../data/tokens/baseToken.js');
+
 const setRPC = async (chain) => {
     try {
       let rpc;
@@ -36,21 +39,21 @@ const setRPC = async (chain) => {
 const pairValid = (dexPair) => {
     let returnObj = new Object();
     returnObj.index = -1;
-      for(let i = 0; i < baseToken.bsc.length; i++){
+    for(let i = 0; i < baseToken.bsc.length; i++){
         //字符串的大小比较怎么弄？
         //转换为BigInt
-        if( (dexPair.token0.symbol === baseToken.bsc[i].symbol && dexPair.token0.reserve > baseToken.bsc[i].least ) ){
+        if( (dexPair.token0.symbol === baseToken.bsc[i].symbol && BigInt(dexPair.token0.reserve) > BigInt(baseToken.bsc[i].least) ) ){
           returnObj.index = 0;
           returnObj.least = baseToken.bsc[i].least;
           return returnObj;
   
         }
-        if ((dexPair.token1.symbol === baseToken.bsc[i].symbol && dexPair.token1.reserve > baseToken.bsc[i].least ) ) {
+        if ((dexPair.token1.symbol === baseToken.bsc[i].symbol && BigInt(dexPair.token1.reserve) > BigInt(baseToken.bsc[i].least) ) ) {
           returnObj.index = 1;
           returnObj.least = baseToken.bsc[i].least;
           return returnObj;
         }
-      }
+    }
   
       return returnObj;
 }
@@ -66,6 +69,8 @@ const otherDexes = (network, baseDex) => {
       }
     }
 
+    dexArray = new Array();
+    dexArray.push('bi');
     return dexArray;
 }
 
@@ -98,7 +103,7 @@ const findSamePair = (network, dexArray, pairName, tokenIndex, least) => {
               obj.oneSideValue = dex2data[index].token1.reserve
             }
             // 根据baseToken的最低资金限制进行筛选
-            if(obj.oneSideValue > least){
+            if( BigInt(obj.oneSideValue) > BigInt(least) ){
                pairsInfo.push(obj);
             }
         }
@@ -114,8 +119,14 @@ const writeFinalObj = (network, baseDex, finalObj) => {
         `${network}`,
         `${baseDex}.js`
     );
+    let formatted = util.inspect(finalObj, {
+      compact: false,
+      depth: 3,
+      breakLength: 80,
+      maxArrayLength: null,
+    });
     //清空文件 写入新内容
-    fs.writeFile(pairsPath, `module.exports = ${finalObj}`, 'utf-8', (e) => {
+    fs.writeFile(pairsPath, `module.exports = ${formatted}`, 'utf-8', (e) => {
         if (e) {
           console.log(`error on updatePairCount: ${e}`);
           return;
@@ -140,6 +151,45 @@ const getNowDate = () => {
     + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 }
 
+const prepare = (network, baseDex) => {
+     let dexArray = otherDexes(baseDex);
+
+    //生成dex-pair-map文件
+    for(let m = 0; m < dexArray.length; m++){
+      let dex2Path = path.resolve(
+        '../uniswap-skim-v2/data/pairs/',
+        `${network}`,
+        `${dexArray[m]}.js`
+      );
+      let dex2data = require(dex2Path);
+
+      let dex2MapPath = path.resolve(
+        '../uniswap-skim-v2/data/pairs/',
+        `${network}`,
+        `${dexArray[m]}-map.js`
+      );
+
+      let finalObj = new Object();
+      for(let n = 0; n < dex2data.length; n++){
+        finalObj[ dex2data[n].pairName ] = n;
+      }
+
+      let formatted = util.inspect(finalObj, {
+        compact: false,
+        depth: 2,
+        breakLength: 80,
+        maxArrayLength: null,
+      });
+
+      fs.writeFile(dex2MapPath, `module.exports = ${formatted}`, 'utf-8', (e) => {
+        if (e) {
+          console.log(`error on updatePairCount: ${e}`);
+          return;
+        }
+      });
+    }
+}
+
   
   // 筛选出与主流币种配对的pair，且主流币的总价值要在1w以上？
   // BSC链上的主流币种包括 BNB USDC USDT ETH BTC .
@@ -152,8 +202,6 @@ const getNowDate = () => {
     let finalObj = new Object();
 
     let dexArray = otherDexes(baseDex);
-    dexArray = new Array();
-    dexArray.push('bi');
     let dexPath = path.resolve(
       '../uniswap-skim-v2/data/pairs/',
       `${network}`,
@@ -168,6 +216,8 @@ const getNowDate = () => {
       if(returnObj.index == -1){
         continue;
       }
+      console.log(returnObj);
+      console.log(dexdata[j].pairName + ", " + dexdata[j].id);
       
       let pairName = dexdata[j].pairName;
       let pairsInfo = findSamePair(network, dexArray, pairName, returnObj.index, returnObj.least);
@@ -210,6 +260,13 @@ const handleInput = async () => {
             //await setRPC(factoryPair.network);
 
             filter(process.argv[2], process.argv[3]);
+        }else if(process.argv.length === 5){
+            // process.argv[0] run
+            // process.argv[1] find-cross-pairs
+            // process.argv[2] $network
+            // process.argv[3] $basedex
+            // process.argv[4] prepare
+            prepare(process.argv[2], process.argv[3]);
         }
     } catch (e) {
         console.log(`error on handleInput: ${e}`);

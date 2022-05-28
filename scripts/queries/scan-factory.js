@@ -67,12 +67,21 @@ const setRPCandFactory = async (net, add) => {
 
 const getName = async (add) => {
   try {
+
+    //有些例外合约 需排除
+    //bsc 0x33779269C875B74f23bA21dd7fb57FB335Beae06  INP
+    if(factoryPair.network === 'bsc'){
+      //console.log(factoryPair + ',' + add.toUpperCase());
+      if(add.toUpperCase() === '0X33779269C875B74f23bA21dd7fb57FB335Beae06'){
+        return 'INP';
+      }
+    }
     let token = new web3.eth.Contract(erc20abi, add);
     let name = await token.methods.name().call();
 
     return name;
   } catch (e) {
-    console.log(`error on getName: ${e}`);
+    console.log(`error on getName: ${e}` + add);
     return '';
   }
 };
@@ -247,6 +256,15 @@ const loop = () => {
   }, timeout);
 };
 
+const loop2 = async ()  => {
+  while(counter < max){
+    await getPair(counter);
+    counter++;
+  }
+  appendFile(pairPath, `\n];\n`);
+  end(`updating pair count...new total: ${max} pairs`, true);
+}
+
 const end = (msg, updateCount) => {
   let timer = timeout * 100;
 
@@ -292,6 +310,7 @@ const handleInput = async () => {
             `updating ${max - initial - 1} ${factoryPair.name} pairs...`
           );
           loop();
+          //loop2();
         }
       }
     } else {
