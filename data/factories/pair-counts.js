@@ -7,6 +7,13 @@ module.exports = [
     address: '0x0841BD0B734E4F5853f0dD8d7Ea041c241fb0Da6'
   },
   {
+    name: 'ape-testnet',
+    network: 'bsc',
+    count: 0,
+    abi: 'standard',
+    address: '0x152349604d49c2af10adee94b918b051104a143e'
+  },
+  {
     name: 'bakery',
     network: 'bsc',
     count: 1978,
@@ -82,6 +89,13 @@ module.exports = [
     count: 428547,
     abi: 'standard',
     address: '0xca143ce32fe78f1f7019d7d551a6402fc5350c73'
+  },
+  {
+    name: 'cake-v2-testnet',
+    network: 'bsc',
+    count: NaN,
+    abi: 'standard',
+    address: '0x6725F303b657a9451d8BA641348b6761A6CC7a17'
   },
   {
     name: 'cheese',
