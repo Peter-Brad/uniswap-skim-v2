@@ -86,7 +86,7 @@ module.exports = [
   {
     name: 'cake-v2',
     network: 'bsc',
-    count: 428547,
+    count: 0,
     abi: 'standard',
     address: '0xca143ce32fe78f1f7019d7d551a6402fc5350c73'
   },
@@ -205,7 +205,7 @@ module.exports = [
   {
     name: 'bi',
     network: 'bsc',
-    count: 337,
+    count: 0,
     abi: 'standard',
     address: '0x858E3312ed3A876947EA49d572A7C42DE08af7EE'
   },
@@ -222,6 +222,13 @@ module.exports = [
     count: 1043,
     abi: 'standard',
     address: '0x3CD1C46068dAEa5Ebb0d3f55F6915B10648062B8'
+  },
+  {
+    name: 'babyswap',
+    network: 'bsc',
+    count: 1266,
+    abi: 'standard',
+    address: '0x86407bEa2078ea5f5EB5A52B2caA963bC1F889Da'
   },
   {
     name: 'arpa',
