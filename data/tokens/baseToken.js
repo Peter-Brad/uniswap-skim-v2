@@ -155,6 +155,38 @@ module.exports = {
             "decimal":"6",
             //3000$
             "least":"3000000000"
+        },
+        {
+            "name":"Binance USD",
+            "symbol":"BUSD.e",
+            "address":"0x19860CCB0A68fd4213aB9D8266F7bBf05A8dDe98",
+            "decimal":"18",
+            //3000$
+            "least":"3000000000000000000000"
+        },
+        {
+            "name":"Dai Stablecoin",
+            "symbol":"DAI.e",
+            "address":"0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
+            "decimal":"18",
+            //3000$
+            "least":"3000000000000000000000"
+        },
+        {
+            "name":"Wrapped BTC",
+            "symbol":"WBTC.e",
+            "address":"0x50b7545627a5162F82A992c33b87aDc75187B218",
+            "decimal":"8",
+            //3000$
+            "least":"15860085"
+        },
+        {
+            "name":"Wrapped AVAX",
+            "symbol":"WAVAX",
+            "address":"0x50b7545627a5162F82A992c33b87aDc75187B218",
+            "decimal":"18",
+            //3000$
+            "least":"200000000000000000000"
         }
     ]
 }

@@ -102,6 +102,7 @@ const findSamePair = (network, dexArray, pairName, tokenIndex, least) => {
           );
         let dex2dataMap = require(dex2MapPath);
         if( pairName in dex2dataMap){
+            
             // or dex2dataMap.hasOwnProperty(pairName)
             let index =   dex2dataMap[pairName];
             let obj = new Object();
@@ -122,6 +123,7 @@ const findSamePair = (network, dexArray, pairName, tokenIndex, least) => {
   } catch (e) {
     console.log(`error on findSamePair: ${e}`);
   }
+  console.log(pairsInfo);
 
   return pairsInfo;
 }
@@ -139,6 +141,7 @@ const writeFinalObj = (network, baseDex, finalObj) => {
       breakLength: 80,
       maxArrayLength: null,
     });
+    //
     //清空文件 写入新内容
     fs.writeFile(pairsPath, `module.exports = ${formatted}`, 'utf-8', (e) => {
         if (e) {
@@ -217,7 +220,7 @@ const prepare = (network, baseDex) => {
   const filter = (network, baseDex) => {
     let finalObj = new Object();
 
-    let dexArray = otherDexes(baseDex);
+    let dexArray = otherDexes(network, baseDex);
     let dexPath = path.resolve(
       '../uniswap-skim-v2/data/pairs/',
       `${network}`,
@@ -244,6 +247,7 @@ const prepare = (network, baseDex) => {
       {
           continue;
       }
+      // 将当前baseDex的信息填充进去
       let obj = new Object();
       obj.dex = baseDex;
       obj.address = dexdata[j].id;
@@ -252,12 +256,17 @@ const prepare = (network, baseDex) => {
       }else{
         obj.oneSideValue = dexdata[j].token1.reserve
       }
-
       pairsInfo.unshift(obj);
 
       let tokenPairObj = new Object();
       tokenPairObj['lastUpdated'] = getNowDate();
       tokenPairObj['dexes'] = pairsInfo;
+
+      tokenPairObj['token0Addrrss'] = dexdata[j].token0.id;
+      tokenPairObj['token1Address'] = dexdata[j].token1.id;
+
+      tokenPairObj['token0Symbol'] = dexdata[j].token0.symbol;
+      tokenPairObj['token1Symbol'] = dexdata[j].token1.symbol;
 
       finalObj[pairName] = tokenPairObj;
     }
