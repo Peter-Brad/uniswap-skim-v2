@@ -27,6 +27,8 @@ const setRPC = async (chain) => {
         rpc = env.parsed.HECO_RPC;
       } else if (chain === 'arbi') {
         rpc = env.parsed.ARBITRUM_RPC;
+      } else if (chain === 'bscTest') {
+        rpc = env.parsed.BSC_RPC_TEST;
       }
   
       web3 = new Web3(rpc);
@@ -36,26 +38,32 @@ const setRPC = async (chain) => {
     }
 };
 
-const pairValid = (dexPair) => {
+//检查pair中是否包含baseToken && 当前pair的单边价值超过阈值
+const pairValid = (network, dexPair) => {
     let returnObj = new Object();
     returnObj.index = -1;
-    for(let i = 0; i < baseToken.bsc.length; i++){
+    try{
+    for(let i = 0; i < baseToken[`${network}`].length; i++){
+        //console.log(baseToken[`${network}`][i]);
         //字符串的大小比较怎么弄？
         //转换为BigInt
-        if( (dexPair.token0.symbol === baseToken.bsc[i].symbol && BigInt(dexPair.token0.reserve) > BigInt(baseToken.bsc[i].least) ) ){
+        if( (dexPair.token0.symbol === baseToken[`${network}`][i].symbol && BigInt(dexPair.token0.reserve) > BigInt(baseToken[`${network}`][i].least) ) ){
           returnObj.index = 0;
-          returnObj.least = baseToken.bsc[i].least;
+          returnObj.least = baseToken[`${network}`][i].least;
           return returnObj;
   
         }
-        if ((dexPair.token1.symbol === baseToken.bsc[i].symbol && BigInt(dexPair.token1.reserve) > BigInt(baseToken.bsc[i].least) ) ) {
+        if ((dexPair.token1.symbol === baseToken[`${network}`][i].symbol && BigInt(dexPair.token1.reserve) > BigInt(baseToken[`${network}`][i].least) ) ) {
           returnObj.index = 1;
-          returnObj.least = baseToken.bsc[i].least;
+          returnObj.least = baseToken[`${network}`][i].least;
           return returnObj;
         }
     }
+    } catch (e) {
+      console.log(`error on pairValid: ${e}`);
+    }  
   
-      return returnObj;
+    return returnObj;
 }
 
 const otherDexes = (network, baseDex) => {
@@ -63,21 +71,23 @@ const otherDexes = (network, baseDex) => {
     let dexCount = 0;
     let dexArray = new Array();
     for (let i = 0; i < pairCounts.length; i++) {
+      //console.log(pairCounts[i].network)
       if (network === pairCounts[i].network && pairCounts[i].name != baseDex) {
         dexCount++;
         dexArray.push(pairCounts[i].name);
       }
     }
-
-    dexArray = new Array();
-    dexArray.push('bi');
+    //console.log(dexArray);
+    //dexArray = new Array();
+    //dexArray.push('bi');
     return dexArray;
 }
 
 
 //从其他dex中找到相同的pair
 const findSamePair = (network, dexArray, pairName, tokenIndex, least) => {
-    let pairsInfo = new Array();
+  let pairsInfo = new Array();
+  try {
     for(let q = 0; q < dexArray.length; q++){
         let dex2Path = path.resolve(
           '../uniswap-skim-v2/data/pairs/',
@@ -103,13 +113,17 @@ const findSamePair = (network, dexArray, pairName, tokenIndex, least) => {
               obj.oneSideValue = dex2data[index].token1.reserve
             }
             // 根据baseToken的最低资金限制进行筛选
+            console.log(obj.oneSideValue );
             if( BigInt(obj.oneSideValue) > BigInt(least) ){
                pairsInfo.push(obj);
             }
         }
     }
+  } catch (e) {
+    console.log(`error on findSamePair: ${e}`);
+  }
 
-    return pairsInfo;
+  return pairsInfo;
 }
 
 //写入CrossDexesPairs/bsc/pairs.js
@@ -128,7 +142,7 @@ const writeFinalObj = (network, baseDex, finalObj) => {
     //清空文件 写入新内容
     fs.writeFile(pairsPath, `module.exports = ${formatted}`, 'utf-8', (e) => {
         if (e) {
-          console.log(`error on updatePairCount: ${e}`);
+          console.log(`error on writeFinalObj: ${e}`);
           return;
         }
     });
@@ -151,10 +165,11 @@ const getNowDate = () => {
     + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 }
 
+//生成dex-pair-map文件,便于对比分析
 const prepare = (network, baseDex) => {
-     let dexArray = otherDexes(baseDex);
+     let dexArray = otherDexes(network, baseDex);
+     dexArray.push(baseDex);
 
-    //生成dex-pair-map文件
     for(let m = 0; m < dexArray.length; m++){
       let dex2Path = path.resolve(
         '../uniswap-skim-v2/data/pairs/',
@@ -171,6 +186,7 @@ const prepare = (network, baseDex) => {
 
       let finalObj = new Object();
       for(let n = 0; n < dex2data.length; n++){
+        //finalObj[ dex2data[n].pairName ] = dex2data[n].index;
         finalObj[ dex2data[n].pairName ] = n;
       }
 
@@ -210,12 +226,14 @@ const prepare = (network, baseDex) => {
     let dexdata = require(dexPath);
     //从baseDex中的有baseToken的pair开始便利
     for(let j = 0; j < dexdata.length; j++){
+      //console.log(dexdata[j]);
       //检查pair中是否包含baseToken && 当前pair的单边价值超过1w
-      let returnObj = pairValid(dexdata[j]);
+      let returnObj = pairValid(network, dexdata[j]);
       //pair中没有基础token，跳过
       if(returnObj.index == -1){
         continue;
       }
+      console.log(" ")
       console.log(returnObj);
       console.log(dexdata[j].pairName + ", " + dexdata[j].id);
       

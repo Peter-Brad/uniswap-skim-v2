@@ -59,6 +59,66 @@ module.exports = {
             "least":"400000000000000000"
         }
     ],
+    "bscTest":[
+        {
+            "name":"USD Coin",
+            "symbol":"USDC",
+            "address":"0x55174079d93F05ba8169F88b1A765B3Ac584c75D",
+            "decimal":"18",
+            // 5000$
+            "least":"5000000000000000000000"
+        },
+        {
+            "name":"BUSD Token",
+            "symbol":"BUSD",
+            "address":"0xeD24FC36d5Ee211Ea25A80239Fb8C4Cfd80f12Ee",
+            "decimal":"18",
+            // 5000$
+            "least":"5000000000000000000000"
+                  
+        },
+        {
+            "name":"Tether USD",
+            "symbol":"USDT",
+            "address":"0xA11c8D9DC9b66E209Ef60F0C8D969D3CD988782c",
+            "decimal":"18",
+            // 5000$
+            "least":"5000000000000000000000"
+        },
+        /*
+        {
+            "name":"",
+            "symbol":"DAI",
+            "address":"",
+            "decimal":"",
+            "least":""
+        },
+        */
+        {
+            "name":"Wrapped BNB",
+            "symbol":"WBNB",
+            "address":"0xae13d989daC2f0dEbFf460aC112a837C89BAa7cd",
+            "decimal":"18",
+            //18
+            "least":"18000000000000000000"
+        },
+        {
+            "name":"Ethereum Token",
+            "symbol":"ETH",
+            "address":"0xd66c6B4F0be8CE5b39D52E0Fd1344c389929B378",
+            "decimal":"18",
+            //3
+            "least":"5000000000000000000"
+        },
+        {
+            "name":"",
+            "symbol":"BTCB",
+            "address":"0x6ce8dA28E2f864420840cF74474eFf5fD80E65B8",
+            "decimal":"18",
+            //0.2
+            "least":"400000000000000000"
+        }
+    ],
     "matic":[
         {},
         {}
