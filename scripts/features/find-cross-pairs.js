@@ -262,7 +262,7 @@ const prepare = (network, baseDex) => {
       tokenPairObj['lastUpdated'] = getNowDate();
       tokenPairObj['dexes'] = pairsInfo;
 
-      tokenPairObj['token0Addrrss'] = dexdata[j].token0.id;
+      tokenPairObj['token0Address'] = dexdata[j].token0.id;
       tokenPairObj['token1Address'] = dexdata[j].token1.id;
 
       tokenPairObj['token0Symbol'] = dexdata[j].token0.symbol;
