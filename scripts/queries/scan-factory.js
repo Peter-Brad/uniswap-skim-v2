@@ -56,6 +56,9 @@ const setRPCandFactory = async (net, add) => {
     } else if (net === 'arbi') {
       rpc = env.parsed.ARBITRUM_RPC;
       timeout = rpcTimeout.public;
+    } else if (net === 'avax') {
+      rpc = env.parsed.AVAX_RPC;
+      timeout = rpcTimeout.public;
     }
 
     web3 = new Web3(rpc);

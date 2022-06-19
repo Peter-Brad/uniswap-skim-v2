@@ -122,5 +122,39 @@ module.exports = {
     "matic":[
         {},
         {}
+    ],
+    "avax":[
+        {
+            "name":"Tether USD",
+            "symbol":"USDT.e",
+            "address":"0xd66c6B4F0be8CE5b39D52E0Fd1344c389929B378",
+            "decimal":"6",
+            //3000$
+            "least":"3000000000"
+        },
+        {
+            "name":"TetherToken",
+            "symbol":"USDt",
+            "address":"0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
+            "decimal":"6",
+            //3000$
+            "least":"3000000000"
+        },
+        {
+            "name":"USD Coin",
+            "symbol":"USDC",
+            "address":"0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+            "decimal":"6",
+            //3000$
+            "least":"3000000000"
+        },
+        {
+            "name":"USD Coin",
+            "symbol":"USDC.e",
+            "address":"0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664",
+            "decimal":"6",
+            //3000$
+            "least":"3000000000"
+        }
     ]
 }

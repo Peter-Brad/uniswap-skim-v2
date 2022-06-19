@@ -41,6 +41,9 @@ const setRPC = async (chain) => {
       rpc = env.parsed.HECO_RPC;
     } else if (chain === 'arbi') {
       rpc = env.parsed.ARBITRUM_RPC;
+    } else if (net === 'avax') {
+      rpc = env.parsed.AVAX_RPC;
+      timeout = rpcTimeout.public;
     }
 
     web3 = new Web3(rpc);

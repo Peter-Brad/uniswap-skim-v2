@@ -1146,70 +1146,70 @@ module.exports = [
     count: 620,
     abi: 'standard',
     address: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4'
-  },  
+  },
   {
     name: 'trader-joe',
     network: 'avax',
-    count: 0,
+    count: NaN,
     abi: 'standard',
     address: '0x9Ad6C38BE94206cA50bb0d90783181662f0Cfa10'
-  },  
+  },
   {
     name: 'pangolin',
     network: 'avax',
     count: 0,
     abi: 'standard',
     address: '0xefa94DE7a4656D787667C749f7E1223D71E9FD88'
-  },  
+  },
   {
     name: 'sushi-avax',
     network: 'avax',
     count: 0,
     abi: 'standard',
     address: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4'
-  },  
+  },
   {
     name: 'RadioShack',
     network: 'avax',
     count: 0,
     abi: 'standard',
     address: '0xA0FbfDa09B8815Dd42dDC70E4f9fe794257CD9B6'
-  },  
+  },
   {
     name: 'elk-avax',
     network: 'avax',
     count: 0,
     abi: 'standard',
     address: '0x091d35d7F63487909C863001ddCA481c6De47091'
-  },  
+  },
   {
     name: 'hurricane',
     network: 'avax',
     count: 0,
     abi: 'standard',
     address: '0x8e6F4Af0B6c26d16feBdD6f28FA7C694bD49c6BF'
-  },  
+  },
   {
     name: 'lydia',
     network: 'avax',
     count: 0,
     abi: 'standard',
     address: '0xe0C1bb6DF4851feEEdc3E14Bd509FEAF428f7655'
-  },  
+  },
   {
     name: 'haku',
     network: 'avax',
     count: 0,
     abi: 'standard',
     address: '0x2Db46fEB38C57a6621BCa4d97820e1fc1de40f41'
-  },  
+  },
   {
     name: 'yeti',
     network: 'avax',
     count: 0,
     abi: 'standard',
     address: '0x58C8CD291Fa36130119E6dEb9E520fbb6AcA1c3a'
-  },  
+  },
   {
     name: 'thorus',
     network: 'avax',
