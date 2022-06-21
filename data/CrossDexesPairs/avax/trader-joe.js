@@ -1,6 +1,6 @@
 module.exports = {
   'JOE/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -13,32 +13,13 @@ module.exports = {
         oneSideValue: '688636112143920552756'
       }
     ],
-    token0Addrrss: '0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd',
+    token0Address: '0x6e84a6216eA6dACC71eE8E6b0a5B7322EEbC0fDd',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'JOE',
     token1Symbol: 'WAVAX'
   },
-  'WAVAX/ELK': {
-    lastUpdated: '2022-06-19 14:23:11',
-    dexes: [
-      {
-        dex: 'trader-joe',
-        address: '0x88D000E853d03E7D59CE602dff736Dc39aD118fb',
-        oneSideValue: '350334156297053445936'
-      },
-      {
-        dex: 'elk-avax',
-        address: '0x6A0c03c0B933875DAf767BB90584bA696B713243',
-        oneSideValue: '8259869240538941404607'
-      }
-    ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
-    token1Address: '0xE1C110E1B1b4A1deD0cAf3E42BfBdbB7b5d7cE1C',
-    token0Symbol: 'WAVAX',
-    token1Symbol: 'ELK'
-  },
   'WAVAX/SNOB': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -51,13 +32,13 @@ module.exports = {
         oneSideValue: '541794022918591695440'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xC38f41A296A4493Ff429F1238e030924A1542e50',
     token0Symbol: 'WAVAX',
     token1Symbol: 'SNOB'
   },
   'VSO/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -70,13 +51,13 @@ module.exports = {
         oneSideValue: '404604699709877732609'
       }
     ],
-    token0Addrrss: '0x846D50248BAf8b7ceAA9d9B53BFd12d7D7FBB25a',
+    token0Address: '0x846D50248BAf8b7ceAA9d9B53BFd12d7D7FBB25a',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'VSO',
     token1Symbol: 'WAVAX'
   },
   'WAVAX/XAVA': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -89,13 +70,13 @@ module.exports = {
         oneSideValue: '46250465368973099052765'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xd1c3f94DE7e5B45fa4eDBBA472491a9f4B166FC4',
     token0Symbol: 'WAVAX',
     token1Symbol: 'XAVA'
   },
   'WAVAX/PEFI': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -108,13 +89,13 @@ module.exports = {
         oneSideValue: '2678674023315923829934'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xe896CDeaAC9615145c0cA09C8Cd5C25bced6384c',
     token0Symbol: 'WAVAX',
     token1Symbol: 'PEFI'
   },
   'WET/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -127,13 +108,13 @@ module.exports = {
         oneSideValue: '7377792570844207401633'
       }
     ],
-    token0Addrrss: '0xB1466d4cf0DCfC0bCdDcf3500F473cdACb88b56D',
+    token0Address: '0xB1466d4cf0DCfC0bCdDcf3500F473cdACb88b56D',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'WET',
     token1Symbol: 'WAVAX'
   },
   'WBTC.e/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -146,13 +127,13 @@ module.exports = {
         oneSideValue: '1433835377'
       }
     ],
-    token0Addrrss: '0x50b7545627a5162F82A992c33b87aDc75187B218',
+    token0Address: '0x50b7545627a5162F82A992c33b87aDc75187B218',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'WBTC.e',
     token1Symbol: 'WAVAX'
   },
   'WETH.e/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -175,18 +156,18 @@ module.exports = {
         oneSideValue: '700068247780232361442'
       }
     ],
-    token0Addrrss: '0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB',
+    token0Address: '0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'WETH.e',
     token1Symbol: 'WAVAX'
   },
   'QI/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
-        address: '0x05366F13d5f655FFB2d2ABb7b2ba005b12eB8bdE',
-        oneSideValue: '5058549473180002117410'
+        address: '0x2774516897AC629aD3ED9dCac7e375Dda78412b9',
+        oneSideValue: '2510755712147399513332'
       },
       {
         dex: 'pangolin',
@@ -194,13 +175,13 @@ module.exports = {
         oneSideValue: '71241132194463105172370'
       }
     ],
-    token0Addrrss: '0xA56F9A54880afBc30CF29bB66d2D9ADCdcaEaDD6',
+    token0Address: '0x8729438EB15e2C8B576fCc6AeCdA6A148776C0F5',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'QI',
     token1Symbol: 'WAVAX'
   },
   'WAVAX/USDT.e': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -228,13 +209,13 @@ module.exports = {
         oneSideValue: '17553092561'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xc7198437980c041c805A1EDcbA50c1Ce5db95118',
     token0Symbol: 'WAVAX',
     token1Symbol: 'USDT.e'
   },
   'WAVAX/DAI.e': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -247,13 +228,13 @@ module.exports = {
         oneSideValue: '25634343266980861889940'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70',
     token0Symbol: 'WAVAX',
     token1Symbol: 'DAI.e'
   },
   'LINK.e/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -276,13 +257,13 @@ module.exports = {
         oneSideValue: '442755603266140927309'
       }
     ],
-    token0Addrrss: '0x5947BB275c521040051D82396192181b413227A3',
+    token0Address: '0x5947BB275c521040051D82396192181b413227A3',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'LINK.e',
     token1Symbol: 'WAVAX'
   },
   'USDT.e/DAI.e': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -295,13 +276,13 @@ module.exports = {
         oneSideValue: '19034053154'
       }
     ],
-    token0Addrrss: '0xc7198437980c041c805A1EDcbA50c1Ce5db95118',
+    token0Address: '0xc7198437980c041c805A1EDcbA50c1Ce5db95118',
     token1Address: '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70',
     token0Symbol: 'USDT.e',
     token1Symbol: 'DAI.e'
   },
   'YAK/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -314,13 +295,13 @@ module.exports = {
         oneSideValue: '9042623204464819328046'
       }
     ],
-    token0Addrrss: '0x59414b3089ce2AF0010e7523Dea7E2b35d776ec7',
+    token0Address: '0x59414b3089ce2AF0010e7523Dea7E2b35d776ec7',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'YAK',
     token1Symbol: 'WAVAX'
   },
   'USDC.e/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -348,13 +329,13 @@ module.exports = {
         oneSideValue: '18991523516'
       }
     ],
-    token0Addrrss: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
+    token0Address: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'USDC.e',
     token1Symbol: 'WAVAX'
   },
   'USDC.e/DAI.e': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -372,13 +353,13 @@ module.exports = {
         oneSideValue: '108620803808'
       }
     ],
-    token0Addrrss: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
+    token0Address: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
     token1Address: '0xd586E7F844cEa2F87f50152665BCbc2C279D8d70',
     token0Symbol: 'USDC.e',
     token1Symbol: 'DAI.e'
   },
   'MIM/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -396,13 +377,13 @@ module.exports = {
         oneSideValue: '25826314307856244670749'
       }
     ],
-    token0Addrrss: '0x130966628846BFd36ff31a822705796e8cb8C18D',
+    token0Address: '0x130966628846BFd36ff31a822705796e8cb8C18D',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'MIM',
     token1Symbol: 'WAVAX'
   },
   'USDC.e/USDT.e': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -435,13 +416,13 @@ module.exports = {
         oneSideValue: '56225895578'
       }
     ],
-    token0Addrrss: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
+    token0Address: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
     token1Address: '0xc7198437980c041c805A1EDcbA50c1Ce5db95118',
     token0Symbol: 'USDC.e',
     token1Symbol: 'USDT.e'
   },
   'AAVE.e/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -454,13 +435,13 @@ module.exports = {
         oneSideValue: '214164910869471290562'
       }
     ],
-    token0Addrrss: '0x63a72806098Bd3D9520cC43356dD78afe5D386D9',
+    token0Address: '0x63a72806098Bd3D9520cC43356dD78afe5D386D9',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'AAVE.e',
     token1Symbol: 'WAVAX'
   },
   'WAVAX/TIME': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -473,13 +454,13 @@ module.exports = {
         oneSideValue: '391508416077184647535'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xb54f16fB19478766A268F172C9480f8da1a7c9C3',
     token0Symbol: 'WAVAX',
     token1Symbol: 'TIME'
   },
   'YAY/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -492,13 +473,13 @@ module.exports = {
         oneSideValue: '1092807991028824112428'
       }
     ],
-    token0Addrrss: '0x01C2086faCFD7aA38f69A6Bd8C91BEF3BB5adFCa',
+    token0Address: '0x01C2086faCFD7aA38f69A6Bd8C91BEF3BB5adFCa',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'YAY',
     token1Symbol: 'WAVAX'
   },
   'KLO/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -511,13 +492,13 @@ module.exports = {
         oneSideValue: '2762048634205126652707'
       }
     ],
-    token0Addrrss: '0xb27c8941a7Df8958A1778c0259f76D1F8B711C35',
+    token0Address: '0xb27c8941a7Df8958A1778c0259f76D1F8B711C35',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'KLO',
     token1Symbol: 'WAVAX'
   },
   'WBTC.e/USDC.e': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -530,13 +511,13 @@ module.exports = {
         oneSideValue: '11315684162'
       }
     ],
-    token0Addrrss: '0x50b7545627a5162F82A992c33b87aDc75187B218',
+    token0Address: '0x50b7545627a5162F82A992c33b87aDc75187B218',
     token1Address: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
     token0Symbol: 'WBTC.e',
     token1Symbol: 'USDC.e'
   },
   'BNB/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -549,13 +530,13 @@ module.exports = {
         oneSideValue: '773370634181820444517'
       }
     ],
-    token0Addrrss: '0x264c1383EA520f73dd837F915ef3a732e204a493',
+    token0Address: '0x264c1383EA520f73dd837F915ef3a732e204a493',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'BNB',
     token1Symbol: 'WAVAX'
   },
   'AMPL/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -568,13 +549,13 @@ module.exports = {
         oneSideValue: '13328262458968173757375'
       }
     ],
-    token0Addrrss: '0x027dbcA046ca156De9622cD1e2D907d375e53aa7',
+    token0Address: '0x027dbcA046ca156De9622cD1e2D907d375e53aa7',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'AMPL',
     token1Symbol: 'WAVAX'
   },
   'ORBS/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -587,13 +568,13 @@ module.exports = {
         oneSideValue: '1162231415606206939288'
       }
     ],
-    token0Addrrss: '0x340fE1D898ECCAad394e2ba0fC1F93d27c7b717A',
+    token0Address: '0x340fE1D898ECCAad394e2ba0fC1F93d27c7b717A',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'ORBS',
     token1Symbol: 'WAVAX'
   },
   'CRA/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -606,13 +587,13 @@ module.exports = {
         oneSideValue: '397136188829467972618'
       }
     ],
-    token0Addrrss: '0xA32608e873F9DdEF944B24798db69d80Bbb4d1ed',
+    token0Address: '0xA32608e873F9DdEF944B24798db69d80Bbb4d1ed',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'CRA',
     token1Symbol: 'WAVAX'
   },
   'WAVAX/TUS': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -625,13 +606,13 @@ module.exports = {
         oneSideValue: '257639742976115719304'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xf693248F96Fe03422FEa95aC0aFbBBc4a8FdD172',
     token0Symbol: 'WAVAX',
     token1Symbol: 'TUS'
   },
   'MIM/USDC.e': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -644,13 +625,13 @@ module.exports = {
         oneSideValue: '660526216550'
       }
     ],
-    token0Addrrss: '0x130966628846BFd36ff31a822705796e8cb8C18D',
+    token0Address: '0x130966628846BFd36ff31a822705796e8cb8C18D',
     token1Address: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
     token0Symbol: 'MIM',
     token1Symbol: 'USDC.e'
   },
   'JEWEL/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -663,13 +644,13 @@ module.exports = {
         oneSideValue: '1832964510497937325975'
       }
     ],
-    token0Addrrss: '0x4f60a160D8C2DDdaAfe16FCC57566dB84D674BD6',
+    token0Address: '0x4f60a160D8C2DDdaAfe16FCC57566dB84D674BD6',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'JEWEL',
     token1Symbol: 'WAVAX'
   },
   'WAVAX/CLY': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -682,13 +663,13 @@ module.exports = {
         oneSideValue: '1171006250018485884045'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xec3492a2508DDf4FDc0cD76F31f340b30d1793e6',
     token0Symbol: 'WAVAX',
     token1Symbol: 'CLY'
   },
   'USDC.e/USDC': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -701,13 +682,13 @@ module.exports = {
         oneSideValue: '1671311982125'
       }
     ],
-    token0Addrrss: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
+    token0Address: '0xA7D7079b0FEaD91F3e65f86E8915Cb59c1a4C664',
     token1Address: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
     token0Symbol: 'USDC.e',
     token1Symbol: 'USDC'
   },
   'PLN/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -720,13 +701,13 @@ module.exports = {
         oneSideValue: '429698753746405333266'
       }
     ],
-    token0Addrrss: '0x7b2B702706D9b361dfE3f00bD138C0CFDA7FB2Cf',
+    token0Address: '0x7b2B702706D9b361dfE3f00bD138C0CFDA7FB2Cf',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'PLN',
     token1Symbol: 'WAVAX'
   },
   'WAVAX/USDC': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -739,13 +720,13 @@ module.exports = {
         oneSideValue: '1534969135513'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
     token0Symbol: 'WAVAX',
     token1Symbol: 'USDC'
   },
   'WAVAX/IME': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -758,13 +739,13 @@ module.exports = {
         oneSideValue: '227821514010040033112'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xF891214fdcF9cDaa5fdC42369eE4F27F226AdaD6',
     token0Symbol: 'WAVAX',
     token1Symbol: 'IME'
   },
   'WAVAX/FRAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -777,13 +758,13 @@ module.exports = {
         oneSideValue: '218807233194599516226'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64',
     token0Symbol: 'WAVAX',
     token1Symbol: 'FRAX'
   },
   'WAVAX/HeC': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -796,13 +777,13 @@ module.exports = {
         oneSideValue: '913142827936426383352'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xC7f4debC8072e23fe9259A5C0398326d8EfB7f5c',
     token0Symbol: 'WAVAX',
     token1Symbol: 'HeC'
   },
   'WAVAX/BAVA': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -815,13 +796,13 @@ module.exports = {
         oneSideValue: '1917280303743459135762'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xe19A1684873faB5Fb694CfD06607100A632fF21c',
     token0Symbol: 'WAVAX',
     token1Symbol: 'BAVA'
   },
   'USDt/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -834,13 +815,13 @@ module.exports = {
         oneSideValue: '88743627265'
       }
     ],
-    token0Addrrss: '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
+    token0Address: '0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'USDt',
     token1Symbol: 'WAVAX'
   },
   'UST/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -853,13 +834,13 @@ module.exports = {
         oneSideValue: '2122142873869258999465'
       }
     ],
-    token0Addrrss: '0x260Bbf5698121EB85e7a74f2E45E16Ce762EbE11',
+    token0Address: '0x260Bbf5698121EB85e7a74f2E45E16Ce762EbE11',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'UST',
     token1Symbol: 'WAVAX'
   },
   'sAVAX/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -877,13 +858,13 @@ module.exports = {
         oneSideValue: '317965484340749737253'
       }
     ],
-    token0Addrrss: '0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE',
+    token0Address: '0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'sAVAX',
     token1Symbol: 'WAVAX'
   },
   'USDC/AVABBC': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -896,13 +877,13 @@ module.exports = {
         oneSideValue: '8647364034'
       }
     ],
-    token0Addrrss: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+    token0Address: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
     token1Address: '0xe83cE6bfb580583bd6A62B4Be7b34fC25F02910D',
     token0Symbol: 'USDC',
     token1Symbol: 'AVABBC'
   },
   'LiPOGE/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -915,13 +896,13 @@ module.exports = {
         oneSideValue: '20000000000000000000000'
       }
     ],
-    token0Addrrss: '0x168C14B83C959778b6b8C4e4FA0C20af8df23e61',
+    token0Address: '0x168C14B83C959778b6b8C4e4FA0C20af8df23e61',
     token1Address: '0x631A499e79fB46e2Ab7E4A5f18E3391ad32386B6',
     token0Symbol: 'LiPOGE',
     token1Symbol: 'WAVAX'
   },
   'ZOO/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -934,13 +915,13 @@ module.exports = {
         oneSideValue: '12347192834557645094837'
       }
     ],
-    token0Addrrss: '0x1B88D7aD51626044Ec62eF9803EA264DA4442F32',
+    token0Address: '0x1B88D7aD51626044Ec62eF9803EA264DA4442F32',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'ZOO',
     token1Symbol: 'WAVAX'
   },
   'LOST/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -953,13 +934,13 @@ module.exports = {
         oneSideValue: '1885292258084198389603'
       }
     ],
-    token0Addrrss: '0x449674B82F05d498E126Dd6615a1057A9c088f2C',
+    token0Address: '0x449674B82F05d498E126Dd6615a1057A9c088f2C',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'LOST',
     token1Symbol: 'WAVAX'
   },
   'BPT/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -972,13 +953,13 @@ module.exports = {
         oneSideValue: '704725615156560611060'
       }
     ],
-    token0Addrrss: '0x1111111111182587795eF1098ac7da81a108C97a',
+    token0Address: '0x1111111111182587795eF1098ac7da81a108C97a',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'BPT',
     token1Symbol: 'WAVAX'
   },
   'WAVAX/KACY': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -991,13 +972,13 @@ module.exports = {
         oneSideValue: '964794429340943852891'
       }
     ],
-    token0Addrrss: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
+    token0Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token1Address: '0xf32398dae246C5f672B52A54e9B413dFFcAe1A44',
     token0Symbol: 'WAVAX',
     token1Symbol: 'KACY'
   },
   'FITFI/WAVAX': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -1010,13 +991,13 @@ module.exports = {
         oneSideValue: '1104765985741146390320'
       }
     ],
-    token0Addrrss: '0x714f020C54cc9D104B6F4f6998C63ce2a31D1888',
+    token0Address: '0x714f020C54cc9D104B6F4f6998C63ce2a31D1888',
     token1Address: '0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7',
     token0Symbol: 'FITFI',
     token1Symbol: 'WAVAX'
   },
   'AvSTRM/USDC': {
-    lastUpdated: '2022-06-19 14:23:11',
+    lastUpdated: '2022-06-21 19:40:41',
     dexes: [
       {
         dex: 'trader-joe',
@@ -1034,7 +1015,7 @@ module.exports = {
         oneSideValue: '8746006125'
       }
     ],
-    token0Addrrss: '0x94a7f270cd12545A277E656266Aef5e27dF3Eb28',
+    token0Address: '0x94a7f270cd12545A277E656266Aef5e27dF3Eb28',
     token1Address: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
     token0Symbol: 'AvSTRM',
     token1Symbol: 'USDC'

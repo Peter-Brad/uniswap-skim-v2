@@ -85,7 +85,7 @@ const otherDexes = (network, baseDex) => {
 
 
 //从其他dex中找到相同的pair
-const findSamePair = (network, dexArray, pairName, tokenIndex, least) => {
+const findSamePair = (network, dexArray, pairName, token0Addr, token1Addr, tokenIndex, least) => {
   let pairsInfo = new Array();
   try {
     for(let q = 0; q < dexArray.length; q++){
@@ -102,9 +102,14 @@ const findSamePair = (network, dexArray, pairName, tokenIndex, least) => {
           );
         let dex2dataMap = require(dex2MapPath);
         if( pairName in dex2dataMap){
-            
             // or dex2dataMap.hasOwnProperty(pairName)
             let index =   dex2dataMap[pairName];
+             //要对token地址进行校验
+            if( token0Addr !=  dex2data[index].token0.id || 
+              token1Addr !=  dex2data[index].token1.id 
+            ){
+              continue;
+            }
             let obj = new Object();
             obj.dex = dexArray[q];
             obj.address = dex2data[index].id;
@@ -241,7 +246,9 @@ const prepare = (network, baseDex) => {
       console.log(dexdata[j].pairName + ", " + dexdata[j].id);
       
       let pairName = dexdata[j].pairName;
-      let pairsInfo = findSamePair(network, dexArray, pairName, returnObj.index, returnObj.least);
+      let pairsInfo = findSamePair(network, dexArray, pairName, 
+        dexdata[j].token0.id, dexdata[j].token1.id,
+        returnObj.index, returnObj.least);
 
       if(pairsInfo.length == 0)
       {

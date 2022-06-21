@@ -1176,6 +1176,13 @@ module.exports = [
     address: '0xA0FbfDa09B8815Dd42dDC70E4f9fe794257CD9B6'
   },
   {
+    name: 'Swapsicle',
+    network: 'avax',
+    count: 0,
+    abi: 'standard',
+    address: '0x9C60C867cE07a3c403E2598388673C10259EC768'
+  },
+  {
     name: 'elk-avax',
     network: 'avax',
     count: 0,
