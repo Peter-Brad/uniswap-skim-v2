@@ -910,11 +910,11 @@ module.exports = [
     address: '0xB2435253C71FcA27bE41206EB2793E44e1Df6b6D'
   },
   {
-    name: 'fin',
+    name: 'tomb',
     network: 'ftm',
-    count: 4,
+    count: 0,
     abi: 'standard',
-    address: '0x2d9864418e876160B9b4d5c4a304575Dc5c86956'
+    address: '0xE236f6890F1824fa0a7ffc39b1597A5A6077Cfe9'
   },
   {
     name: 'paint',
@@ -924,18 +924,60 @@ module.exports = [
     address: '0xcA372E4c5FE66126e3F17c414a521346a7aABe12'
   },
   {
-    name: 'aura',
+    name: 'protofi',
     network: 'ftm',
-    count: 32,
+    count: 0,
     abi: 'standard',
-    address: '0x3EBa855443aD4deE22603B9ce6187E6aa67B435D'
+    address: '0x39720E5Fe53BEEeb9De4759cb91d8E7d42c17b76'
   },
   {
-    name: 'shib-ftm',
+    name: 'knight',
     network: 'ftm',
-    count: 50,
+    count: 0,
     abi: 'standard',
-    address: '0xeAcC845E4db0aB59A326513347a37ed4E999aBD8'
+    address: '0x7d82F56ea0820A9d42b01C3C28F1997721732218'
+  },
+  {
+    name: 'wigoswap',
+    network: 'ftm',
+    count: 0,
+    abi: 'standard',
+    address: '0xC831A5cBfb4aC2Da5ed5B194385DFD9bF5bFcBa7'
+  },
+  {
+    name: 'morpheus',
+    network: 'ftm',
+    count: 0,
+    abi: 'standard',
+    address: '0x9C454510848906FDDc846607E4baa27Ca999FBB6'
+  },
+  {
+    name: 'yoshi',
+    network: 'ftm',
+    count: 0,
+    abi: 'standard',
+    address: '0xc5bC174CB6382FbAB17771d05e6a918441deCeea'
+  },
+  {
+    name: 'soul',
+    network: 'ftm',
+    count: 0,
+    abi: 'standard',
+    address: '0x1120e150dA9def6Fe930f4fEDeD18ef57c0CA7eF'
+  },
+  {
+    name: 'elk-ftm',
+    network: 'ftm',
+    count: 0,
+    abi: 'standard',
+    address: '0x7Ba73c99e6f01a37f3e33854c8F544BbbadD3420'
+  },
+  {
+    name: 'wing',
+    network: 'ftm',
+    count: 0,
+    abi: 'standard',
+    address: '0xc0719a9A35a2D9eBBFdf1C6d383a5E8E7b2ef7a8'
   },
   {
     name: 'quick',
@@ -1044,6 +1086,13 @@ module.exports = [
   },
   {
     name: 'honey-matic',
+    network: 'matic',
+    count: 178,
+    abi: 'standard',
+    address: '0x03DAa61d8007443a6584e3d8f85105096543C19c'
+  },
+  {
+    name: 'uni-matic',
     network: 'matic',
     count: 178,
     abi: 'standard',
