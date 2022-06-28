@@ -870,42 +870,42 @@ module.exports = [
   {
     name: 'hyper',
     network: 'ftm',
-    count: 267,
+    count: NaN,
     abi: 'standard',
     address: '0x991152411A7B5A14A8CF0cDDE8439435328070dF'
   },
   {
     name: 'zoo',
     network: 'ftm',
-    count: 202,
+    count: 0,
     abi: 'standard',
     address: '0x6178C3B21F7cA1adD84c16AD35452c85a85F5df4'
   },
   {
     name: 'spirit',
     network: 'ftm',
-    count: 1013,
+    count: 0,
     abi: 'standard',
     address: '0xEF45d134b73241eDa7703fa787148D9C9F4950b0'
   },
   {
     name: 'spooky',
     network: 'ftm',
-    count: 1863,
+    count: 0,
     abi: 'standard',
     address: '0x152eE697f2E276fA89E96742e9bB9aB1F2E61bE3'
   },
   {
     name: 'sushi-fantom',
     network: 'ftm',
-    count: 856,
+    count: 0,
     abi: 'standard',
     address: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4'
   },
   {
     name: 'waka',
     network: 'ftm',
-    count: 49,
+    count: 0,
     abi: 'standard',
     address: '0xB2435253C71FcA27bE41206EB2793E44e1Df6b6D'
   },
@@ -919,7 +919,7 @@ module.exports = [
   {
     name: 'paint',
     network: 'ftm',
-    count: 4,
+    count: 0,
     abi: 'standard',
     address: '0xcA372E4c5FE66126e3F17c414a521346a7aABe12'
   },
