@@ -870,98 +870,98 @@ module.exports = [
   {
     name: 'hyper',
     network: 'ftm',
-    count: NaN,
+    count: 287,
     abi: 'standard',
     address: '0x991152411A7B5A14A8CF0cDDE8439435328070dF'
   },
   {
     name: 'zoo',
     network: 'ftm',
-    count: 0,
+    count: 232,
     abi: 'standard',
     address: '0x6178C3B21F7cA1adD84c16AD35452c85a85F5df4'
   },
   {
     name: 'spirit',
     network: 'ftm',
-    count: 0,
+    count: 2130,
     abi: 'standard',
     address: '0xEF45d134b73241eDa7703fa787148D9C9F4950b0'
   },
   {
     name: 'spooky',
     network: 'ftm',
-    count: 0,
+    count: 22459,
     abi: 'standard',
     address: '0x152eE697f2E276fA89E96742e9bB9aB1F2E61bE3'
   },
   {
     name: 'sushi-fantom',
     network: 'ftm',
-    count: 0,
+    count: 1200,
     abi: 'standard',
     address: '0xc35DADB65012eC5796536bD9864eD8773aBc74C4'
   },
   {
     name: 'waka',
     network: 'ftm',
-    count: 0,
+    count: 61,
     abi: 'standard',
     address: '0xB2435253C71FcA27bE41206EB2793E44e1Df6b6D'
   },
   {
     name: 'tomb',
     network: 'ftm',
-    count: 0,
+    count: 164,
     abi: 'standard',
     address: '0xE236f6890F1824fa0a7ffc39b1597A5A6077Cfe9'
   },
   {
     name: 'paint',
     network: 'ftm',
-    count: 0,
+    count: 3,
     abi: 'standard',
     address: '0xcA372E4c5FE66126e3F17c414a521346a7aABe12'
   },
   {
     name: 'protofi',
     network: 'ftm',
-    count: 0,
+    count: 79,
     abi: 'standard',
     address: '0x39720E5Fe53BEEeb9De4759cb91d8E7d42c17b76'
   },
   {
     name: 'knight',
     network: 'ftm',
-    count: 0,
+    count: 82,
     abi: 'standard',
     address: '0x7d82F56ea0820A9d42b01C3C28F1997721732218'
   },
   {
     name: 'wigoswap',
     network: 'ftm',
-    count: 0,
+    count: 97,
     abi: 'standard',
     address: '0xC831A5cBfb4aC2Da5ed5B194385DFD9bF5bFcBa7'
   },
   {
     name: 'morpheus',
     network: 'ftm',
-    count: 0,
+    count: 83,
     abi: 'standard',
     address: '0x9C454510848906FDDc846607E4baa27Ca999FBB6'
   },
   {
     name: 'yoshi',
     network: 'ftm',
-    count: 0,
+    count: 154,
     abi: 'standard',
     address: '0xc5bC174CB6382FbAB17771d05e6a918441deCeea'
   },
   {
     name: 'soul',
     network: 'ftm',
-    count: 0,
+    count: NaN,
     abi: 'standard',
     address: '0x1120e150dA9def6Fe930f4fEDeD18ef57c0CA7eF'
   },
