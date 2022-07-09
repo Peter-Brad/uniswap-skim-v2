@@ -17356,8 +17356,6 @@ module.exports = [
     },
     pairName: 'USDC/VE'
   },
-];
-
   {
     index: 1058,
     id: '0xC5CFd71d93Cd2C6BC99BcD478a57080FB66f7E11',
@@ -18530,4 +18528,5 @@ module.exports = [
       reserve: '40000000000000000'
     },
     pairName: 'HSFTM/AAVE'
-  },
+  }
+];

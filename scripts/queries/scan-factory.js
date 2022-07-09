@@ -178,7 +178,9 @@ const getPair = async (num) => {
 
 const checkPairCount = async () => {
   try {
-    let count = await factory.methods.allPairsLength().call();
+    // souswap的长度为totalPairs
+    let count = 95;
+    //let count = await factory.methods.allPairsLength().call();
     return count;
   } catch (e) {
     console.log(`error on checkPairCount: ${e}`);
@@ -259,6 +261,7 @@ const loop = () => {
   }, timeout);
 };
 
+//一个线程串行query
 const loop2 = async ()  => {
   while(counter < max){
     await getPair(counter);
@@ -312,8 +315,8 @@ const handleInput = async () => {
           console.log(
             `updating ${max - initial - 1} ${factoryPair.name} pairs...`
           );
-          loop();
-          //loop2();
+          //loop();
+          loop2();
         }
       }
     } else {

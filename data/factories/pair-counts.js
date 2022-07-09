@@ -912,7 +912,7 @@ module.exports = [
   {
     name: 'tomb',
     network: 'ftm',
-    count: 164,
+    count: 166,
     abi: 'standard',
     address: '0xE236f6890F1824fa0a7ffc39b1597A5A6077Cfe9'
   },
@@ -926,7 +926,7 @@ module.exports = [
   {
     name: 'protofi',
     network: 'ftm',
-    count: 79,
+    count: 80,
     abi: 'standard',
     address: '0x39720E5Fe53BEEeb9De4759cb91d8E7d42c17b76'
   },
@@ -940,7 +940,7 @@ module.exports = [
   {
     name: 'wigoswap',
     network: 'ftm',
-    count: 97,
+    count: 98,
     abi: 'standard',
     address: '0xC831A5cBfb4aC2Da5ed5B194385DFD9bF5bFcBa7'
   },
@@ -954,28 +954,28 @@ module.exports = [
   {
     name: 'yoshi',
     network: 'ftm',
-    count: 154,
+    count: 160,
     abi: 'standard',
     address: '0xc5bC174CB6382FbAB17771d05e6a918441deCeea'
   },
   {
     name: 'soul',
     network: 'ftm',
-    count: NaN,
+    count: 94,
     abi: 'standard',
     address: '0x1120e150dA9def6Fe930f4fEDeD18ef57c0CA7eF'
   },
   {
     name: 'elk-ftm',
     network: 'ftm',
-    count: 0,
+    count: 80,
     abi: 'standard',
     address: '0x7Ba73c99e6f01a37f3e33854c8F544BbbadD3420'
   },
   {
     name: 'wing',
     network: 'ftm',
-    count: 0,
+    count: 46,
     abi: 'standard',
     address: '0xc0719a9A35a2D9eBBFdf1C6d383a5E8E7b2ef7a8'
   },

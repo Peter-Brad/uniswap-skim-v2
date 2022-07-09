@@ -33557,7 +33557,6 @@ module.exports = [
     },
     pairName: 'SPIRIT/BEETS'
   },
-];
 
   {
     index: 1922,
@@ -34986,4 +34985,5 @@ module.exports = [
       reserve: '375668178481650'
     },
     pairName: 'DAI/GAL'
-  },
+  }
+];

@@ -1,12 +1,17 @@
+const nfetch = require('node-fetch');
 
+// 循环访问subgraph，并将数据保存起来的类，预感后面还会经常用到
+// 
 
 const path = 'https://bsc.streamingfast.io/subgraphs/name/pancakeswap/exchange-v2';
 
-const fetchAccounts = async (nextBlock) => {
+const fetchPairs = async (nextBlock) => {
+// 
 const pancakeswap_pairs_request = {
     query:
     `
-    pairs(first: 1000, orderBy: block,where:{block_gt: "${nextBlock}"}) {
+    {
+      pairs(first: 10, orderBy: block,where:{block_gt: ${nextBlock}}) {
         id
         name
         token0 {
@@ -21,10 +26,12 @@ const pancakeswap_pairs_request = {
           symbol
           decimals
         }
-        hash
         block
+        reserve0
+        reserve1
         timestamp
       }
+    }
     `
 }
 
@@ -42,20 +49,37 @@ async function sleep(millis) {
     return new Promise((resolve) => setTimeout(resolve, millis));
 }
 
-const getPairs = async (pageCount, accountFirstSize) => {
-
-    let firstPairCreateBlock = '';
+const getPairs = async (pageCount) => {
+    
+    //let  firstPairCreateBlock = new Number(8857083)
+    let  firstPairCreateBlock = 8857083
+    let i = 1;
+    let result;
     do {
         try {
-            result = await fetchAccounts({
-              lastid: lastid, 
-              accountFirstSize: accountFirstSize
-            });
+            result = await fetchPairs(
+              firstPairCreateBlock
+            );
         } catch (e) {
             console.log(e);
             continue;
         }
+        if (result.error) {
+          console.warn(result.error.toString());
+          continue;
+        }
+        //console.log(result);
+        console.log("result.data.pairs: " + result.data.pairs.length);
+        console.log(result.data.pairs[0]);
+        i++;
+        //获取最后一条的block数据
+        await sleep(200); // Avoid rate limiting
+    }while(result.data.pairs.length == 1000 && i <= pageCount);
 
-    }while();
+    //存入文件
+    
 }
+
+getPairs(1);
+
 
