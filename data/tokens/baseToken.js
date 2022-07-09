@@ -188,5 +188,63 @@ module.exports = {
             //3000$
             "least":"200000000000000000000"
         }
+    ],
+    "ftm":[
+        {
+            "name":"USD Coin",
+            "symbol":"USDC",
+            "address":"0x04068DA6C83AFCFA0e13ba15A6696662335D5B75",
+            "decimal":"6",
+            "limit":"3000$",
+            "least":"3000000000"
+        },
+        {
+            "name":"Wrapped Fantom",
+            "symbol":"WFTM",
+            "address":"0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+            "decimal":"18",
+            "limit":"3000$",
+            "least":"15000000000000000000000"
+        },
+        {
+            "name":"Frapped USDT",
+            "symbol":"fUSDT",
+            "address":"0x049d68029688eAbF473097a2fC38ef61633A3C7A",
+            "decimal":"6",
+            "limit":"3000$",
+            "least":"3000000000"
+        },
+        {
+            "name":"Dai Stablecoin",
+            "symbol":"DAI",
+            "address":"0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E",
+            "decimal":"18",
+            "limit":"3000$",
+            "least":"3000000000000000000000"
+        },
+        {
+            "name":"Bitcoin",
+            "symbol":"BTC",
+            "address":"0x321162Cd933E2Be498Cd2267a90534A804051b11",
+            "decimal":"8",
+            "limit":"3000$",
+            "least":"15860085"
+        },
+        {
+            "name":"fBTC",
+            "symbol":"FBTC",
+            "address":"0xe1146b9AC456fCbB60644c36Fd3F868A9072fc6E",
+            "decimal":"18",
+            "limit":"3000$",
+            "least":"158600850000000000"
+        },
+        {
+            "name":"fETH",
+            "symbol":"FETH",
+            "address":"0x658b0c7613e890EE50B8C4BC6A3f41ef411208aD",
+            "decimal":"18",
+            "limit":"3000$",
+            "least":"3015244513683047000"
+        }
     ]
 }

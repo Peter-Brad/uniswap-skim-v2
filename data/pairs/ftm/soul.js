@@ -1613,5 +1613,5 @@ module.exports = [
       reserve: '27125776919494166856'
     },
     pairName: 'FTF/SOUL'
-  },
+  }
 ];

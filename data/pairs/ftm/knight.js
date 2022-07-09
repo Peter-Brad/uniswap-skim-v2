@@ -1393,8 +1393,6 @@ module.exports = [
     },
     pairName: 'WFTM/lckASNT'
   },
-];
-
   {
     index: 82,
     id: '0x4492Aa088d56e3Fd232A21EB1e3e8c75A1a455da',
@@ -1411,4 +1409,7 @@ module.exports = [
       reserve: '171805399844774057037770'
     },
     pairName: 'USDC/5TABLE'
-  },
+  }
+];
+
+  

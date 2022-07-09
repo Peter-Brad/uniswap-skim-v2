@@ -2837,5 +2837,5 @@ module.exports = [
       reserve: '91876076828055948939'
     },
     pairName: 'USDC/DANTE'
-  },
+  }
 ];

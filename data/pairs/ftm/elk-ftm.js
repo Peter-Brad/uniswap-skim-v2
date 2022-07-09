@@ -1359,8 +1359,6 @@ module.exports = [
     },
     pairName: 'WFTM/XMN'
   },
-];
-
   {
     index: 80,
     id: '0xEE519bD734aD783E574e2aA3605a2Db018BF94E9',
@@ -1377,4 +1375,7 @@ module.exports = [
       reserve: '1000000000'
     },
     pairName: 'USDC/GAL'
-  },
+  }
+];
+
+  

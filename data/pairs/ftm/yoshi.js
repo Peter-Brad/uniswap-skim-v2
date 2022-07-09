@@ -2719,8 +2719,6 @@ module.exports = [
     },
     pairName: 'BOO/DAI'
   },
-];
-
   {
     index: 160,
     id: '0x1ee955ADDc669Da87Ed7979C07C9d3E50B63ff0d',
@@ -2737,4 +2735,7 @@ module.exports = [
       reserve: '1021755031123350311'
     },
     pairName: 'USDC/DEI'
-  },
+  }
+];
+
+  

@@ -797,5 +797,5 @@ module.exports = [
       reserve: '6473314685627767066'
     },
     pairName: 'WFTM/GTPS'
-  },
+  }
 ];

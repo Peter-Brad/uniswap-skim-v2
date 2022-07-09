@@ -1681,5 +1681,5 @@ module.exports = [
       reserve: '4193292540970891937'
     },
     pairName: 'WFTM/FTF'
-  },
+  }
 ];

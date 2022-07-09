@@ -1426,5 +1426,5 @@ module.exports = [
       reserve: '1000000000000000000'
     },
     pairName: 'USDC.safe/DAI'
-  },
+  }
 ];
